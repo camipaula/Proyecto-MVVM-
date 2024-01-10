@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVMTiendaa.UsuarioPage"
+             Title="UsuarioPage">
+    <VerticalStackLayout>
+        <!-- Encabezado -->
+        <StackLayout Grid.Row="0" BackgroundColor="MediumPurple" Padding="20" VerticalOptions="Start">
+            <Label Text="K.C STORE" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" TextColor="SeaShell" />
+        </StackLayout>
+
+
+        <VerticalStackLayout HorizontalOptions="Center">
+            <Label Text=" "/>
+            <Button Text="COMPRAS REALIZADAS" BackgroundColor="MediumPurple" CornerRadius="50" Clicked="OnClickcomprasRealizadas"/>
+            <Label Text=" "/>
+            <Button Text="VER PERFIL" BackgroundColor="MediumPurple" CornerRadius="50" Clicked="OnClickVerPerfil"/>
+            <Label Text=" "/>
+            <Button Text="CERRAR SESIÓN" TextColor="Purple" BackgroundColor="White" CornerRadius="50" Clicked="OnClickCerrarSesion"/>
+            <Label Text=" "/>
+        </VerticalStackLayout>
+
+        <Label Text=" "/>
+        
+    </VerticalStackLayout>
+</ContentPage>

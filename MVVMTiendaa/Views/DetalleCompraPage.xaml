@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVMTiendaa.DetalleCompraPage"
+             Title="DetalleCompraPage">
+    <VerticalStackLayout>
+        <StackLayout BackgroundColor="MediumPurple" Padding="20" VerticalOptions="Start">
+            <Label Text="K.C STORE" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" TextColor="SeaShell" />
+        </StackLayout>
+        <StackLayout 
+        BackgroundColor="White" Padding="5" VerticalOptions="Start">
+        </StackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+
+            <Label 
+        FontAttributes="Bold"
+        Text="TU CARRITO"
+        FontSize="30"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        TextColor="MediumPurple"/>
+        </HorizontalStackLayout>
+
+
+
+
+        <ListView x:Name="detalleCarrito"
+        RowHeight="100" 
+        ItemSelected="OnClickMostrarDetalleCompra">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout Orientation="Vertical">
+                                <Label Text=""/>
+                                <Label VerticalOptions="Start" FontSize="20" FontAttributes="Bold">
+                                    
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            
+                                            <Span Text="{Binding prenda.nombre}" FontSize="20" FontAttributes="Bold"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+                                <Label VerticalOptions="Start" FontSize="18" FontAttributes="Bold">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Seleccionaste: " FontSize="16" FontAttributes="Bold"/>
+                                            <Span Text="{Binding cantidad}" FontSize="16" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+
+                                <Label VerticalOptions="End" FontSize="15" FontAttributes="Bold" HorizontalOptions="Start">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Precio Total: " FontAttributes="Bold"/>
+                                            <Span Text="{Binding precioTotal}" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+
+                            </StackLayout>
+
+                        </StackLayout>
+
+                    </ViewCell>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+        <Label x:Name="PrecioTotalCompra" VerticalOptions="End" FontSize="15" FontAttributes="Bold" HorizontalOptions="Start">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Precio Total: " />
+                    <Span Text="{Binding precioTotal}" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+    </VerticalStackLayout>
+</ContentPage>

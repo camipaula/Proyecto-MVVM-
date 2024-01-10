@@ -1,0 +1,143 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MVVMTiendaa
+build_property.ProjectDir = C:\Users\tania\source\repos\MVVMTiendaa\MVVMTiendaa\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/AccesoriosPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.AccesoriosPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AccesoriosPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AccesoriosPage.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/CarritoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.CarritoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CarritoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CarritoPage.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/ComprasRealizadas.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.ComprasRealizadas.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ComprasRealizadas.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ComprasRealizadas.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/DetalleAccesorioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.DetalleAccesorioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetalleAccesorioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetalleAccesorioPage.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/DetalleCarritoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.DetalleCarritoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetalleCarritoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetalleCarritoPage.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/DetalleCompraPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.DetalleCompraPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetalleCompraPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetalleCompraPage.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/DetallePerfilUsuario.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.DetallePerfilUsuario.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetallePerfilUsuario.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetallePerfilUsuario.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/DetallePrendaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.DetallePrendaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetallePrendaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetallePrendaPage.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/DetallePromocionPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.DetallePromocionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetallePromocionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetallePromocionPage.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/PrendasPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.PrendasPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PrendasPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PrendasPage.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/ProductosPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.ProductosPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductosPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductosPage.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/PromocionesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.PromocionesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PromocionesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PromocionesPage.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/RegistrarsePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.RegistrarsePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegistrarsePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegistrarsePage.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/UsuarioModificado.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.UsuarioModificado.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\UsuarioModificado.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\UsuarioModificado.xaml
+
+[C:/Users/tania/source/repos/MVVMTiendaa/MVVMTiendaa/Views/UsuarioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MVVMTiendaa.Views.UsuarioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\UsuarioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\UsuarioPage.xaml

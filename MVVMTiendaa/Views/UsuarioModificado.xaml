@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MVVMTiendaa.ViewModels"
+             x:Class="MVVMTiendaa.UsuarioModificado"
+             Title="UsuarioModificado">
+
+    <ContentPage.BindingContext>
+        <viewModels:UsuarioModificadoViewModel />
+    </ContentPage.BindingContext>
+    
+    <VerticalStackLayout>
+        <TableView >
+            <TableRoot>
+                <TableSection Title="Editar credenciales">
+                    <EntryCell x:Name="usuario"
+                               Text="{Binding Usuario}"
+                           Placeholder="Usuario"/>
+                    <EntryCell x:Name="correo"
+                                Text="{Binding Correo}"
+                           Placeholder="Correo"/>
+                    <EntryCell x:Name="telefono"
+                               Text="{Binding Telefono}"
+                            Placeholder="Teléfono"/>
+                    <EntryCell x:Name="direccion"
+                               Text="{Binding Direccion}"
+                            Placeholder="Dirección"/>
+                    <EntryCell x:Name="contrasena"
+                               Text="{Binding Contrasenia}"
+                            Placeholder="Contrasena"/>
+                   
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        <Button Text="Guardar Cambios"
+            FontSize="15"
+            Margin="5"
+            Clicked="OnClickGuardarCambios"/>
+
+    </VerticalStackLayout>
+</ContentPage>

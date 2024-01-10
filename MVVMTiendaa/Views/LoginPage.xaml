@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MVVMTiendaa.ViewModels"
+             x:Class="MVVMTiendaa.LoginPage"
+             Title="LoginPage"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <ContentPage.BindingContext>
+        <viewModels:LoginPageViewModel />
+    </ContentPage.BindingContext>
+    
+    <VerticalStackLayout>
+
+        <StackLayout BackgroundColor="MediumPurple" Padding="20" VerticalOptions="Start">
+            <HorizontalStackLayout>
+                <!-- Etiqueta "x" con gestor de eventos -->
+                <Label Text="x" FontSize="25" TextColor="White">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnXLabelTapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <!-- Espacio entre "x" y "K.C STORE" -->
+                <Label Text="                          "/>
+                 
+
+                <!-- Etiqueta "K.C STORE" en el centro -->
+                <Label Text="K.C STORE" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="StartAndExpand" TextColor="SeaShell" />
+            </HorizontalStackLayout>
+        </StackLayout>
+
+        <Label Text=""/>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            
+            <Label 
+                FontAttributes="Bold"
+                Text="ACCEDE A TU CUENTA"
+                FontSize="30"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                TextColor="MediumPurple"/>
+        </HorizontalStackLayout>
+        <Label/>
+        <Label/>
+        <Image 
+        Source="usuario.png"
+         WidthRequest="150"
+        HeightRequest="150"
+        VerticalOptions="EndAndExpand"
+        HorizontalOptions="Center">
+            
+        </Image>
+        <Label/>
+        <StackLayout Padding="20">
+            <!-- Ingreso de nombre de usuario -->
+            <Frame CornerRadius="10" BackgroundColor="MediumPurple" Padding="10" Margin="0,0,0,10">
+                <Entry x:Name="nombreUsuario" Text="{Binding NombreUsuario}" Placeholder="Ingrese su nombre de usuario" PlaceholderColor="White" />
+            </Frame>
+
+            <!-- Ingreso de la contraseña -->
+            <Frame CornerRadius="10" BackgroundColor="MediumPurple" Padding="10" Margin="0,0,0,10">
+                <Entry x:Name="contrasenia" Text="{Binding Contrasenia}" Placeholder="Ingrese su contraseña" IsPassword="True" PlaceholderColor="White" />
+            </Frame>
+            
+
+        </StackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center">
+            <Button Text="Iniciar Sesión"
+            BackgroundColor="MediumPurple" CornerRadius="50" Clicked="OnClickIniciarSesion"/>
+            <Label Text="           "/>
+            <Label Text="o" TextColor="Black" HorizontalOptions="Center"/>
+
+            <Button Text="Registrarse" TextColor="MediumPurple" Clicked="OnClickRegistrarse"
+            BackgroundColor="White" CornerRadius="50"/>
+
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

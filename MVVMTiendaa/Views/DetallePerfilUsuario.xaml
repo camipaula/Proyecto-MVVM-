@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVMTiendaa.DetallePerfilUsuario"
+             Title="DetallePerfilUsuario">
+    <VerticalStackLayout>
+        <StackLayout BackgroundColor="MediumPurple" Padding="20" VerticalOptions="Start">
+            <Label Text="K.C STORE" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" TextColor="SeaShell" />
+        </StackLayout>
+        <StackLayout 
+BackgroundColor="White" Padding="5" VerticalOptions="Start">
+        </StackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center">
+
+            <Label 
+FontAttributes="Bold"
+Text="MI PERFIL"
+FontSize="30"
+VerticalOptions="Center" 
+HorizontalOptions="Center" 
+TextColor="MediumPurple"/>
+            <Label/>
+
+            <Image 
+Source="perfilnuevo.png"
+WidthRequest="100"
+HeightRequest="100"
+VerticalOptions="Center"
+HorizontalOptions="Center">
+
+            </Image>
+            <Label/>
+
+        </VerticalStackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="Usuario: " FontAttributes="Bold"
+                FontSize="18"/>
+            <Label x:Name="usuario"
+                FontSize="18"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="Correo: " FontAttributes="Bold"
+                FontSize="18"/>
+            <Label x:Name="correo"
+                 FontSize="18"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="Telefono: " FontAttributes="Bold"
+        FontSize="18"/>
+            <Label x:Name="telefono"
+         FontSize="18"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="Dirección: " FontAttributes="Bold"
+                FontSize="18"/>
+            <Label x:Name="direccion"
+                FontSize="18"/>
+        </StackLayout>
+        <Label/>
+
+        <StackLayout Orientation="Horizontal">
+            
+            <Button Text="Editar"
+            Clicked="OnClickEditar"
+            FontSize="20"
+            Margin="5"
+            HorizontalOptions="FillAndExpand"
+            TextColor="White"
+            BackgroundColor="MediumPurple"/>
+
+            <Button Text="Salir"
+            Clicked="OnClickSalir"
+            FontSize="20"
+            Margin="5"
+            HorizontalOptions="FillAndExpand"
+            BackgroundColor="PaleVioletRed"/>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

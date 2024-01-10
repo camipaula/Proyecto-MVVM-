@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVMTiendaa.ProductosPage"
+             Title="Bienvenido/a!">
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Primary"
+                 Priority="0"
+                 IconImageSource="perfilnuevo.png"
+                 Clicked="OnUsuarioClicked" />
+        <!-- Usuario -->
+    </ContentPage.ToolbarItems>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Encabezado -->
+        <StackLayout Grid.Row="0" BackgroundColor="MediumPurple" Padding="20" VerticalOptions="Start">
+            <Label Text="K.C STORE" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" TextColor="SeaShell" />
+        </StackLayout>
+        
+
+        <!-- Contenido principal -->
+        <StackLayout Grid.Row="1">
+            <StackLayout BackgroundColor="White" Padding="5" VerticalOptions="Start">
+                <!-- Contenido de la página aquí -->
+            </StackLayout>
+           
+
+            
+
+            <VerticalStackLayout HorizontalOptions="Center">
+                <Label Text=""/>
+                <Image 
+                Source="search.png"
+                WidthRequest="100"
+                HeightRequest="100"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="Center">
+                    
+                </Image>
+                <Label Text=" "/>
+                <Button Text="PRENDAS" BackgroundColor="MediumPurple" CornerRadius="50" Clicked="OnClickPrendas"/>
+                <Label Text=" "/>
+           
+            </VerticalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text=" "/>
+                
+                <Label Text="Catálogo de Tienda física" FontAttributes="Bold" FontSize="15" TextColor="Purple" />
+
+                <Label Text=" "/>
+            </HorizontalStackLayout>
+            <Label Text=" "/>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <VerticalStackLayout>
+                    <Image 
+                    Source="cartera.png"
+                    WidthRequest="100"
+                    HeightRequest="100"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="Center">
+
+                    </Image>
+                    <Label/>
+                    <Button Text="ACCESORIOS" BackgroundColor="MediumPurple" CornerRadius="50" Clicked="OnClickAccesorios"/>
+                </VerticalStackLayout>
+               
+                <Label Text="           "/>
+                <VerticalStackLayout>
+                    <Image 
+Source="descuentos.png"
+WidthRequest="100"
+HeightRequest="100"
+VerticalOptions="EndAndExpand"
+HorizontalOptions="Center">
+
+                    </Image>
+                    <Label/>
+                    <Button Text="PROMOCIONES" BackgroundColor="MediumPurple" CornerRadius="50" Clicked="OnClickPromociones"/>
+                </VerticalStackLayout>
+                
+            </HorizontalStackLayout>
+            
+            <Label Text=" "/>
+            <!-- Imagen del carrito en la esquina derecha -->
+            <Image 
+            Source="carrito.png"
+            WidthRequest="50"
+            HeightRequest="50"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="Center">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnCarritoImageTapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            
+
+
+        </StackLayout>
+    </Grid>
+</ContentPage>

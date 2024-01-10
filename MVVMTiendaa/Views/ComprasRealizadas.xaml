@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVMTiendaa.ComprasRealizadas"
+             Title="ComprasRealizadas">
+    <VerticalStackLayout>
+
+        <StackLayout BackgroundColor="MediumPurple" Padding="20" VerticalOptions="Start">
+            <Label Text="K.C STORE" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" TextColor="SeaShell" />
+        </StackLayout>
+        <StackLayout 
+        BackgroundColor="White" Padding="5" VerticalOptions="Start">
+        </StackLayout>
+        <Label Text="   "/>
+        <HorizontalStackLayout HorizontalOptions="Center">
+
+            <Label 
+            FontAttributes="Bold"
+            Text="TUS COMPRAS REALIZADAS"
+            FontSize="30"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="MediumPurple"/>
+            
+        </HorizontalStackLayout>
+        <Label Text="   "/>
+
+        <ListView x:Name="ListaViewCompra"
+                  RowHeight="80"
+                  ItemSelected="ListaViewCompras_ItemSelected">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+
+                            <Label Text=" "/>
+                            <Frame CornerRadius="15" BackgroundColor="MediumPurple" Padding="1" Margin="15" HeightRequest="95" WidthRequest="363">
+
+                                <HorizontalStackLayout>
+                                    <Label Text="    "/>
+                                    <Image 
+                                    Source="comprashechas.png"
+                                    WidthRequest="50"
+                                    HeightRequest="50"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center">
+
+                                    </Image>
+                                    <Label Text="      "/>
+
+
+                                    <VerticalStackLayout>
+                                
+                                <Label Text="" />
+                                <Label VerticalOptions="Start" FontSize="20" FontAttributes="Bold">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                                    <Span Text="Compra #" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                                                    <Span Text="{Binding idCompra}" FontSize="16" TextColor="White"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+                                <Label VerticalOptions="Start" FontSize="20" FontAttributes="Bold">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                                    <Span Text="Fecha de compra: " FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                                                    <Span Text="{Binding fecha}" FontSize="16" TextColor="White"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                    </VerticalStackLayout>
+
+                                </HorizontalStackLayout>
+
+                            </Frame>
+
+
+                        </StackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>

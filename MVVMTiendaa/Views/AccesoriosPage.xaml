@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:viewModels="clr-namespace:MVVMTiendaa.ViewModels"
+             x:Class="MVVMTiendaa.AccesoriosPage"
+             Title="AccesoriosPage">
+
+
+
+    <ContentPage.BindingContext>
+        <viewModels:AccesoriosPageViewModel />
+    </ContentPage.BindingContext>
+    
+    <VerticalStackLayout>
+        <StackLayout BackgroundColor="MediumPurple" Padding="20" VerticalOptions="Start">
+            <Label Text="K.C STORE" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" TextColor="SeaShell" />
+        </StackLayout>
+        <StackLayout 
+    BackgroundColor="White" Padding="5" VerticalOptions="Start">
+        </StackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+
+            <Label 
+    FontAttributes="Bold"
+    Text="ACCESORIOS"
+    FontSize="30"
+    VerticalOptions="Center" 
+    HorizontalOptions="Center" 
+    TextColor="MediumPurple"/>
+        </HorizontalStackLayout>
+
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <HorizontalStackLayout>
+                <TableView HorizontalOptions="CenterAndExpand">
+                    <TableRoot>
+                        <TableSection>
+                            <EntryCell x:Name="BuscarPorID"
+                                       Text="{Binding BuscarPorID}"
+                        Placeholder="Buscar por Código" 
+                        LabelColor="Black" 
+                        HorizontalTextAlignment="Center" />
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+                <Label Text=" "/>
+
+                <Image 
+        Source="loupe.png"
+        WidthRequest="40"
+        HeightRequest="40"
+        VerticalOptions="EndAndExpand"
+        HorizontalOptions="Center">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnClickBuscar"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </HorizontalStackLayout>
+        </StackLayout>
+
+
+
+
+        <ListView x:Name="accesorios"
+                  ItemsSource="{Binding Accesorios}"  
+      RowHeight="130" 
+      ItemSelected="OnClickMostrarDetalles">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        
+                        <StackLayout Orientation="Horizontal">
+
+                            <Label Text=""/>
+                            <Label Text=""/>
+                            <Frame CornerRadius="15" BackgroundColor="MediumPurple" Padding="1" Margin="15" HeightRequest="95" WidthRequest="363">
+                                <ScrollView>
+                                    <HorizontalStackLayout>
+                            <Label Text="    "/>
+                            <Image 
+                            Source="cartera.png"
+                            WidthRequest="50"
+                            HeightRequest="50"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center">
+
+                            </Image>
+                            <Label Text="      "/>
+                            <VerticalStackLayout>
+                                <Label Text=""/>
+                                            <Label VerticalOptions="Start" FontSize="20" FontAttributes="Bold">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+
+                                                        <Span Text="{Binding nombre}"  FontSize="18" TextColor="White" FontAttributes="Bold"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label VerticalOptions="Start" FontSize="20" FontAttributes="Bold">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="COD: " FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                                                        <Span Text="{Binding idAccesorio}" FontSize="16" TextColor="White"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            
+                                            <Label VerticalOptions="Start" FontSize="20" FontAttributes="Bold">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Cantidad: " FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                                                        <Span Text="{Binding cantidad}"  FontSize="16" TextColor="White"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+
+
+
+                                            
+
+                            </VerticalStackLayout>
+                                        <Label Text="                              "/>
+                                        <Label VerticalOptions="Center" FontSize="20" FontAttributes="Bold">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="$" FontSize="25" FontAttributes="Bold" TextColor="White"/>
+                                                    <Span Text="{Binding precio}"  FontSize="25" TextColor="White"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </HorizontalStackLayout>
+                                </ScrollView>
+                            </Frame>
+
+
+                        </StackLayout>
+
+                    </ViewCell>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>

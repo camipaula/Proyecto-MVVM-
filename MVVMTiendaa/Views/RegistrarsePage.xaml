@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MVVMTiendaa.ViewModels"
+             x:Class="MVVMTiendaa.RegistrarsePage"
+             Title="RegistrarsePage">
+
+    <ContentPage.BindingContext>
+        <viewModels:RegistrarsePageViewModel />
+    </ContentPage.BindingContext>
+    
+    <VerticalStackLayout>
+        <StackLayout BackgroundColor="MediumPurple" Padding="20" VerticalOptions="Start">
+            <Label Text="K.C STORE" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" TextColor="SeaShell" />
+        </StackLayout>
+        <StackLayout 
+        BackgroundColor="White" Padding="5" VerticalOptions="Start">
+        </StackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+
+            <Label 
+            FontAttributes="Bold"
+            Text="Regístrate"
+            FontSize="30"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="MediumPurple"/>
+        </HorizontalStackLayout>
+
+        <StackLayout Padding="20">
+            <!-- Ingreso de nombre de usuario -->
+            <Frame CornerRadius="10" BackgroundColor="MediumPurple" Padding="10" Margin="0,0,0,10">
+                <Entry x:Name="nombreUsuario" Text="{Binding NombreUsuario}" Placeholder="Nombre de usuario" PlaceholderColor="White" />
+            </Frame>
+            <!-- Ingreso de correo -->
+            <Frame CornerRadius="10" BackgroundColor="MediumPurple" Padding="10" Margin="0,0,0,10">
+                <Entry x:Name="correo" Text="{Binding Correo}" Placeholder="Correo" PlaceholderColor="White" />
+            </Frame>
+            <!-- Ingreso de telefono -->
+            <Frame CornerRadius="10" BackgroundColor="MediumPurple" Padding="10" Margin="0,0,0,10">
+                <Entry x:Name="telefono" Text="{Binding Telefono}"  Placeholder="Teléfono" PlaceholderColor="White" />
+            </Frame>
+            <!-- Ingreso de direccion -->
+            <Frame CornerRadius="10" BackgroundColor="MediumPurple" Padding="10" Margin="0,0,0,10">
+                <Entry x:Name="direccion" Text="{Binding Direccion}" Placeholder="Dirección" PlaceholderColor="White" />
+            </Frame>
+
+            <!-- Ingreso de la contraseña -->
+            <Frame CornerRadius="10" BackgroundColor="MediumPurple" Padding="10" Margin="0,0,0,10">
+                <Entry x:Name="contrasenia" Text="{Binding Contrasenia}" Placeholder="Contraseña" IsPassword="True" PlaceholderColor="White" />
+            </Frame>
+            <!-- Confirmar contraseña -->
+            <Frame CornerRadius="10" BackgroundColor="MediumPurple" Padding="10" Margin="0,0,0,10">
+                <Entry x:Name="confirmarContrasenia" Text="{Binding ConfirmarContrasenia}" Placeholder="Confirmar Contraseña" IsPassword="True" PlaceholderColor="White" />
+            </Frame>
+
+        </StackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button Text="Registrarse"
+         BackgroundColor="MediumPurple" CornerRadius="50" Clicked="OnClickRegistrarNuevoUsuario"/>
+            <Label Text="           "/>
+            <Button Text="Cancelar"
+            BackgroundColor="PaleVioletRed" CornerRadius="50" Clicked="OnClickCancelar"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
